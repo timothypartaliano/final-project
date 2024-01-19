@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GadgetHub | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link href="assets/product.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GadgetHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
+        aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="todos.html">Todos</a>
+          </li>
+        </ul>
+        <a class="text-white text-decoration-none" aria-current="page" href="register.html">Register / Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Body -->
+  <main>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+      <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <h1 class="display-3 fw-bold">GadgetHub</h1>
+        <h3 class="fw-normal text-muted mb-3">Discover the Future of Tech</h3>
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+          <a class="icon-link" href="#">
+            Learn more
+            <svg class="bi">
+              <use xlink:href="#chevron-right" />
+            </svg>
+          </a>
+          <button type="button" class="btn btn-primary rounded-0" data-bs-dismiss="modal" onclick="showProductList()">
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Smartphones & Tablets</h2>
+          <p class="lead">
+            Stay connected and productive with our range of high-performance
+            smartphones and tablets.
+          </p>
+        </div>
+        <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0">
+        </div>
+      </div>
+      <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Audio & Headphones</h2>
+          <p class="lead">
+            Immerse yourself in superior sound quality with our
+            top-of-the-line audio devices and headphones.
+          </p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="container-lg">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">
+        GadgetHub &copy; 2024 Company, Inc
+      </p>
+
+      <a href="/"
+        class="col-md-3 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap" />
+        </svg>
+      </a>
+
+      <ul class="nav col-md-5 justify-content-end">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Search</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Todos</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <!-- Product List Modal -->
+  <div class="modal" id="productListModal" tabindex="-1" aria-labelledby="productListModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productListModalLabel">Product List</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            onclick="closeProductList()"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Add your product list or table content here -->
+          <p>Product 1: Smartphone</p>
+          <p>Product 2: Tablets</p>
+          <p>Product 3: Audio Devices</p>
+          <p>Product 4: Headphones</p>
+          <p>Product 5: Laptops</p>
+          <!-- ... Add more products as needed ... -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="closeProductList()">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
